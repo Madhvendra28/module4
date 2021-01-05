@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.log{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	
+}
+
+.log .loginimg{
+	position: relative;
+	width: 50%;
+	height: 100%;
+	background-color: black;
+}
+
+.log .loginimg:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(225deg,#e91e63,#03a9f4);
+	z-index: 1;
+	mix-blend-mode: screen;
+}
+
+.log .loginimg .img1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.log .contentbox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+}
+
+.log .contentbox .formbox {
+	width: 50%;
+}
+
+.log .contentbox .formbox h2{
+	color: #607d8b;
+	font-weight: 600;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	margin-bottom: 28px;
+	border-bottom: 4px solid #ff4584;
+	display: inline-block;
+	letter-spacing: 1px;
+}
+
+.log .contentbox .formbox .inputbx{
+	margin-bottom: 20px;
+}
+
+.log .contentbox .formbox .inputbx span{
+	font-size: 16px;
+	margin-bottom: 5px;
+	display: inline-block;
+	color: #607d8b;
+	font-weight: 300;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+.log .contentbox .formbox .inputbx input{
+	width: 100%;
+	padding: 10px 20px;
+	outline: none;
+	font-weight: 400;
+	border: 1px solid #607d8b;
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #607d8b;
+	background: transparent;
+	border-radius: 30px;
+}
+
+.log .contentbox .formbox .inputbx input[type="submit"]{
+	background: #ff4584;
+	color: #fff;
+	outline: none;
+	border: none;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.log .contentbox .formbox .inputbx input[type="submit"]:hover{
+	background: #f53636;
+}
+/* }#f53677 */
+
+.log .contentbox .formbox .remember{
+	margin-bottom: 10px;
+	color: #607d8b;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.log .contentbox .formbox .inputbx p{
+	color: #607d8b;
+}
+
+.log .contentbox .formbox .inputbx p a{
+	color: #ff4584;
+}
+
+@media (max-width: 768px){
+	.log .loginimg{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.log .contentbox {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+	.log .contentbox .formbox{
+		width: 100%;
+		padding: 40px;
+		background: rgb(255 255 255 / 0.9);
+		margin: 50px;
+	}
+}
+
+@media (max-width: 991px){
+	.log .loginimg{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.log .contentbox {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+	.log .contentbox .formbox{
+		width: 70%;
+		padding: 40px;
+		background: rgb(255 255 255 / 0.9);
+		margin: 50px;
+	}
+}
